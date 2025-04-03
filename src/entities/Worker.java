@@ -52,10 +52,6 @@ public class Worker {
         return departament;
     }
 
-    public void setDepartament(Departament departament) {
-        this.departament = departament;
-    }
-
     public List<HourContract> getContracts() {
         return contracts;
     }
