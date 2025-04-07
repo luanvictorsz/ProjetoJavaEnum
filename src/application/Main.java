@@ -1,5 +1,8 @@
 package application;
 
+import entities.Worker;
+import enums.WorkerLevel;
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,10 +14,12 @@ public class Main {
         String departamentName = sc.nextLine();
         System.out.print("Enter the worker data: ");
         System.out.print("Name: ");
-        String nameWorker = sc.nextLine();
+        String workerName = sc.nextLine();
         System.out.print("Level: ");
-        String WorkerLevel = sc.nextLine();
+        String workerLevel = sc.nextLine();
         System.out.print("Base Salary: ");
         double baseSalary = sc.nextDouble();
+
+        Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, departamentName);
     }
 }
