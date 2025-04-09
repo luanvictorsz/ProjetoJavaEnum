@@ -1,5 +1,6 @@
 package application;
 
+import entities.Departament;
 import entities.Worker;
 import enums.WorkerLevel;
 
@@ -20,6 +21,6 @@ public class Main {
         System.out.print("Base Salary: ");
         double baseSalary = sc.nextDouble();
 
-        Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, departamentName);
+        Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Departament(departamentName));
     }
 }
