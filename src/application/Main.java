@@ -40,6 +40,7 @@ public class Main {
             System.out.print("Duration (hours)");
             int hours = sc.nextInt();
             HourContract contract = new HourContract(contractDate, valuePerHour, hours);
+            worker.AddContract(contract);
         }
 
         sc.close();
