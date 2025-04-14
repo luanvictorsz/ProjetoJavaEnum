@@ -22,5 +22,15 @@ public class Main {
         double baseSalary = sc.nextDouble();
 
         Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Departament(departamentName));
+
+        System.out.print("How many contracts to this Worker?: ");
+        int n = sc.nextInt();
+
+        for(int i = 1; i <= n; i++){
+            System.out.println("Enter contract #"+ i + " data: ");
+            System.out.print("Date (DD/MM/YYYY): ");
+        }
+
+        sc.close();
     }
 }
