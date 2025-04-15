@@ -42,6 +42,11 @@ public class Main {
             HourContract contract = new HourContract(contractDate, valuePerHour, hours);
             worker.AddContract(contract);
         }
+        System.out.println();
+        System.out.print("Enter Month and year to calculate income (MM/YYYY): ");
+        String monthAndYear = sc.next();
+        int month = Integer.parseInt(monthAndYear.substring(0,2));
+        int year = Integer.parseInt(monthAndYear.substring(3));
 
         sc.close();
     }
