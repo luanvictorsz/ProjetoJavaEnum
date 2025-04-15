@@ -48,6 +48,9 @@ public class Main {
         int month = Integer.parseInt(monthAndYear.substring(0,2));
         int year = Integer.parseInt(monthAndYear.substring(3));
 
+        System.out.println("Name: " + worker.getName());
+        System.out.println("Department: " + worker.getDepartament().getName());
+        System.out.println("Income for: " + monthAndYear + ": " + String.format("%.2f", worker.Income(year, month)));
         sc.close();
     }
 }
